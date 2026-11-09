@@ -1,0 +1,14 @@
+{
+  "name": "finledger-ai",
+  "version": "1.0.0",
+  "description": "AI-Powered Organizational Finance Monitor",
+  "private": true,
+  "scripts": {
+    "dev:server": "cd server && npx nodemon index.js",
+    "dev:client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -1,0 +1,16 @@
+import api from './axios';
+
+export const loginApi = async (email, password) => {
+  const { data } = await api.post('/auth/login', { email, password });
+  return data;
+};
+
+export const registerApi = async (name, email, password, organization) => {
+  const { data } = await api.post('/auth/register', { name, email, password, organization });
+  return data;
+};
+
+export const getMeApi = async () => {
+  const { data } = await api.get('/auth/me');
+  return data;
+};
