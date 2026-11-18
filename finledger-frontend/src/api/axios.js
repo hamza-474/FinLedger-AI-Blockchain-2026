@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5010/api'
+  baseURL: 'https://finledger-backend-c5ux.onrender.com/api'
 });
 
 api.interceptors.request.use(
